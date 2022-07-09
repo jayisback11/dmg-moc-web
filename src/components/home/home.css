@@ -2,4 +2,118 @@
   background-color: #1e1d52;
   height: 100vh;
   width: 100vw;
+  box-sizing: border-box;
+  position: relative;
+}
+.parallax {
+  z-index: 3;
+}
+
+.dmg-logo-white {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  left: 200px;
+}
+
+.sungirl-svg {
+  position: absolute;
+  width: 550px;
+  height: auto;
+  right: 0;
+  bottom: -50px;
+}
+
+.diamond-1,
+.diamond-2,
+.diamond-3 {
+  position: absolute;
+  opacity: 0.05;
+  width: 200px;
+  height: auto;
+  transition: all 1s linear;
+}
+
+.diamond-1 {
+  width: 291px;
+  left: 225px;
+  top: 249px;
+}
+
+.diamond-2 {
+  width: 291px;
+  left: 910px;
+  top: 183px;
+}
+
+.diamond-3 {
+  width: 291px;
+  left: 564px;
+  top: 568px;
+}
+
+p,
+h1 {
+  position: absolute;
+}
+
+.get-started-btn {
+  position: absolute;
+}
+
+p {
+  color: #38c6f4;
+  font-family: Cabin, sans-serif;
+  font-size: 3rem;
+  left: 225px;
+  top: 250px;
+}
+
+h1 {
+  font-family: Yesteryear, sans-serif;
+  font-size: 6rem;
+  color: white;
+  top: 275px;
+  left: 250px;
+}
+
+.get-started-btn {
+  position: absolute;
+  bottom: 50px;
+  left: 250px;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.highlight {
+  width: 5px;
+  height: 100%;
+  background-color: #38c6f4;
+  left: -5px;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  cursor: default;
+  z-index: -2;
+  border-radius: 10px;
+}
+
+.get-started-btn button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: Cabin, sans-serif;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: white;
+}
+
+.diamond-1:hover,
+.diamond-2:hover,
+.diamond-3:hover {
+  opacity: 1;
+}
+
+.get-started-btn:hover .highlight {
+  width: 140px;
 }
