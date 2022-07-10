@@ -1,9 +1,48 @@
 .service {
   background: #fff;
-  height: 100vh;
+  height: 140vh;
   width: 100%;
   box-sizing: border-box;
   position: relative;
+}
+
+.service-main-text {
+  position: absolute;
+  font-family: Cabin, sans-serif;
+  color: #1e1d52;
+  font-size: 4rem;
+  left: 350px;
+  top: 125px;
+  white-space: nowrap;
+}
+
+.service-learn-more {
+  position: absolute;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: Cabin, sans-serif;
+  font-size: 1.75rem;
+  background-color: transparent;
+  color: #1e1d52;
+  background-color: #00b0ff;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 20px 0 20px 0;
+  text-decoration: none;
+  margin-left: 6px;
+  left: 350px;
+  top: 350px;
+  white-space: nowrap;
+  transition: all 0.3s linear;
+}
+
+.service-learn-more:hover {
+  border-radius: 0 20px 0 20px;
+  background-color: #1e1d52;
+  color: #00b0ff;
 }
 
 .service-header {
@@ -61,4 +100,33 @@
   100% {
     opacity: 0;
   }
+}
+
+.db-logo {
+  width: 40%;
+  opacity: 0.04;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.service-main-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  flex-direction: row;
+  top: 850px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1425px) {
+    .service-main-container {
+        top: 1175px;
+    }
+
 }

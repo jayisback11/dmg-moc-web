@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import './service.css'
 import { services } from './services'
+import DMGLOGODB from '../../assets/images/dmg_logo_db.svg'
+import ServiceComponent from './ServiceComponent'
 
 function Service () {
   const [offsetY, setOffsetY] = useState(0)
@@ -17,7 +19,14 @@ function Service () {
   }, [])
 
   return (
-    <div className='service' id="service">
+    <div className='service' id='service'>
+      <img src={DMGLOGODB} className='db-logo' alt='' />
+      <h1 className='service-main-text'>
+        How can we help <br /> your business?
+      </h1>
+      <a href='#' className='service-learn-more'>
+        Learn More
+      </a>
       <div className='service-header'>
         <div
           className='highlight-service'
@@ -39,6 +48,11 @@ function Service () {
         >
           SERVICE
         </h1>
+      </div>
+      <div className='service-main-container'>
+        {services.map(({ title, description }, index) => (
+          <ServiceComponent title={title} description={description} />
+        ))}
       </div>
     </div>
   )

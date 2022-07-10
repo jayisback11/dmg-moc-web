@@ -1,0 +1,27 @@
+.serviceComponent {
+  width: 700px;
+}
+
+.image-and-title {
+  display: flex;
+  align-items: center;
+}
+
+.image-and-title img {
+  width: 75px;
+  margin-right: 20px;
+}
+
+.image-and-title {
+  font-family: Yesteryear, sans-serif;
+  font-weight: normal;
+  color: #1e1d52;
+  font-size: 1.55rem;
+  white-space: nowrap;
+}
+
+.serviceComponent p {
+  font-family: Cabin, sans-serif;
+  color: #1e1d52;
+  font-size: 1.5rem;
+}

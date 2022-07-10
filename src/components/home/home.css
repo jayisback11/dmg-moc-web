@@ -1,12 +1,9 @@
 .home {
-  background-color: #1e1d52;
+  background: linear-gradient(180deg, #1E1D52 0%, #38C6F4 560%);
   height: 100vh;
   width: 100%;
   box-sizing: border-box;
   position: relative;
-}
-.parallax {
-  z-index: 3;
 }
 
 .dmg-logo-white {
@@ -58,6 +55,7 @@
 .home-header-text {
   position: absolute;
   transition: all 1s linear;
+  white-space: nowrap;
 }
 
 .get-started-btn {
@@ -112,6 +110,7 @@
   color: white;
   text-decoration: none;
   margin-left: 6px;
+  white-space: nowrap;
 }
 
 .diamond-1:hover,
