@@ -1,0 +1,64 @@
+.service {
+  background: #fff;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.service-header {
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  left: 200px;
+}
+
+.service-header-text {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-family: Cabin, sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  z-index: 1;
+  color: #1e1d52;
+  opacity: 0;
+}
+
+.highlight-service {
+  width: 50%;
+  height: 0%;
+  position: absolute;
+  border-radius: 0 0 10px 10px;
+  background-color: #00b0ff;
+}
+
+@keyframes top-to-bottom {
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes bottom-to-top {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+@keyframes show-text {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dont-show-text {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
